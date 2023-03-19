@@ -1,0 +1,28 @@
+.btns {
+    @include transition();
+    
+    display: inline-block;
+    width: 320px;
+    height: 80px;
+    margin: $m-2 $m-5;
+  
+    text-decoration: none;
+    line-height: 75px;
+    border-radius: 45px;
+    text-align: center;
+    letter-spacing: 1px;
+  
+    font-size: $font-18;
+    font-weight: $font-w-500;
+    
+    color: $color-text;
+    background: $color-purple;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  
+    &:hover {
+      background: $color-pink;
+      box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+  
+      transform: translateY(-3px);
+    }
+}  

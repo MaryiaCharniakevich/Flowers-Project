@@ -1,0 +1,23 @@
+.navbar {
+    position: absolute;
+    margin-left: 9rem;
+
+    &-lists {
+        display: inline-block;
+        padding: $p-2;
+    }
+
+    &__list {
+        list-style: none;
+        display: block;
+        padding: $p-1;
+        text-align: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-text;
+        font-size: 14px;
+}
+
+}

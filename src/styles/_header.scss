@@ -1,0 +1,46 @@
+.header {
+    @include flex ();
+    // position: fixed;
+    background: $primary-color;
+    padding: 0 $p-2;
+    
+    width: 100%;
+    height: 8rem;
+
+    z-index: 10;
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        padding: $p-2;
+    
+        &_icon {
+            width: 42px;
+            height: 46px;
+            padding-left: $p-1;
+        }
+    }
+}
+
+.logo {
+    display: inline-flex;
+    padding: $p-2;
+
+    &__block {
+        display: block;
+        padding: $p-1 0;
+    }
+
+    &__title { 
+        font-size: $font-24;
+        font-weight: $font-w-700;
+        padding: 0 $p-1 0 $p-1;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-size: $font-10;
+        padding: 0 $p-1;
+        text-align: center;
+    }
+}
