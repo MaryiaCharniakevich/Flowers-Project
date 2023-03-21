@@ -9,7 +9,7 @@
     
 
     // clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
-    clip-path: padding-box circle(50px at 0 100px);
+    
     background: $primary-color;
     color: $color-text;    
     
@@ -27,6 +27,13 @@
             height: 54px;
 
             cursor: pointer;
+
+            &:hover {
+                cursor: pointer;
+        
+                transform: translateY(-5px);
+                box-shadow: 0 5px 10px $color-lightblue;
+            }
         }
     }
 

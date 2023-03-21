@@ -12,7 +12,7 @@
       padding: $p-2;
     
       text-align: center;
-      background-color: $primary-color;
+      background-color: $color-pink;
       border-radius: 1rem;
     
       cursor: pointer;
@@ -44,3 +44,30 @@
       line-height: 1.5;
     }
   }
+
+  //catalog
+
+.filters {
+  float: left;
+  padding: 1rem;
+  height: auto;
+  width: 20%;
+
+  background-color: $secondary-color;
+  text-align: center;
+  border-radius: 15px;
+
+  &__title {
+    font-size: $font-24;
+  }
+
+  &__subtitle {
+    font-size: $font-20;
+    text-decoration: underline;
+  }
+
+  &__descriptions {
+    font-size: $font-16;
+  }
+}
+

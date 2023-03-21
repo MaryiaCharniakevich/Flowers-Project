@@ -44,3 +44,40 @@
         text-align: center;
     }
 }
+
+.popup {
+    position: fixed;
+
+    width: 6rem;
+    height: 6rem;
+
+    bottom: 2rem;
+    right: 1rem;
+    display: inline-block;
+ 
+    background-color: $color-lightgreen;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+
+   &__call {
+    text-decoration-color: $color-orange;
+    align-items: center;
+    color: $color-orange;
+   }
+
+    
+}
+
+
+// .call {
+//     position: fixed;
+//     bottom: 2.2rem;
+//     right: 1rem;
+//     width: 5rem;
+//     height: 5rem;
+//     background-color: $secondary-color;
+//     border-radius: 50%;
+//     // box-shadow: 0 6px 5px var(--shadow);
+//     z-index: 9;
+// }

@@ -1,6 +1,10 @@
+.line {
+  border-bottom: 2px solid $color-pink;
+}
+
 .section {
     padding: $p-3 0;
-    border-bottom: 2px solid $color-pink;
+   
     background-color: $secondary-color;
   
     &__block {
@@ -34,12 +38,13 @@
         font-size: $font-16;
   
         text-align: center;
+        background-color: $secondary-color;
   
         &:hover {
           cursor: pointer;
   
           transform: translateY(-5px);
-          box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+          box-shadow: 0 5px 10px $color-lightblue;
         }
       }
     }
@@ -57,3 +62,27 @@
       margin-top: $m-6;
     }
   }
+
+
+  .section-1 {
+    padding: 0 $p-3 ;
+    background: $secondary-color;
+
+    &__image {
+        width: 100%;
+
+        background: $secondary-color;  
+    }
+}
+
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+    background-color: $primary-color ;
+}
+
+.section-6 {
+  padding: 0 $p-3 ;
+  background: $secondary-color;
+}

@@ -103,6 +103,7 @@ body {
 }
 
 .section-link {
+  color: rgb(39, 38, 38);
   text-decoration: none;
   transition: all 0.5s;
 }
@@ -151,7 +152,7 @@ body {
   display: inline-block;
   width: 320px;
   height: 80px;
-  margin: 2rem 5rem;
+  margin: 2rem 15rem;
   text-decoration: none;
   line-height: 75px;
   border-radius: 45px;
@@ -167,6 +168,80 @@ body {
   background: rgb(253, 79, 121);
   box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
   transform: translateY(-3px);
+}
+
+.form {
+  width: 400px;
+  height: 500px;
+  margin: 5rem auto;
+  padding: 20px;
+  background-color: rgb(255, 240, 228);
+  text-align: center;
+  border-radius: 20px;
+}
+.form__title {
+  margin-top: 10px;
+  color: rgb(39, 38, 38);
+  font-size: 16px;
+  font-weight: 700;
+}
+.form__subtitle {
+  margin-top: 10px;
+  color: rgb(39, 38, 38);
+  font-size: 14px;
+  font-weight: 500;
+}
+.form__input-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.form__input {
+  background-color: white;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(39, 38, 38);
+  font-size: 10px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+.form__placeholder {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgb(220, 220, 220);
+  line-height: 14px;
+  pointer-events: none;
+}
+.form__btn {
+  background-color: rgb(253, 79, 121);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(39, 38, 38);
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+.form__idistance1 {
+  margin-top: 40px;
+}
+.form__idistance2 {
+  margin-top: 30px;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
 }
 
 .swiper {
@@ -212,7 +287,7 @@ body {
   margin: 1rem;
   padding: 2rem;
   text-align: center;
-  background-color: rgb(255, 240, 228);
+  background-color: rgb(253, 79, 121);
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -234,6 +309,26 @@ body {
   padding: 1rem;
   color: rgb(215, 83, 122);
   line-height: 1.5;
+}
+
+.filters {
+  float: left;
+  padding: 1rem;
+  height: auto;
+  width: 20%;
+  background-color: rgb(255, 248, 245);
+  text-align: center;
+  border-radius: 15px;
+}
+.filters__title {
+  font-size: 24px;
+}
+.filters__subtitle {
+  font-size: 20px;
+  text-decoration: underline;
+}
+.filters__descriptions {
+  font-size: 16px;
 }
 
 .header {
@@ -277,9 +372,30 @@ body {
   text-align: center;
 }
 
+.popup {
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 2rem;
+  right: 1rem;
+  display: inline-block;
+  background-color: rgb(74, 233, 80);
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+}
+.popup__call {
+  text-decoration-color: rgb(253, 152, 79);
+  align-items: center;
+  color: rgb(253, 152, 79);
+}
+
+.line {
+  border-bottom: 2px solid rgb(253, 79, 121);
+}
+
 .section {
   padding: 3rem 0;
-  border-bottom: 2px solid rgb(253, 79, 121);
   background-color: rgb(255, 248, 245);
 }
 .section__block {
@@ -309,11 +425,12 @@ body {
   padding: 3rem;
   font-size: 16px;
   text-align: center;
+  background-color: rgb(255, 248, 245);
 }
 .section__block_description:hover {
   cursor: pointer;
   transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
+  box-shadow: 0 5px 10px rgb(174, 174, 239);
 }
 .section__image {
   display: flex;
@@ -326,6 +443,27 @@ body {
   margin-top: 6rem;
 }
 
+.section-1 {
+  padding: 0 3rem;
+  background: rgb(255, 248, 245);
+}
+.section-1__image {
+  width: 100%;
+  background: rgb(255, 248, 245);
+}
+
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+  background-color: rgb(255, 240, 228);
+}
+
+.section-6 {
+  padding: 0 3rem;
+  background: rgb(255, 248, 245);
+}
+
 .footer {
   position: relative;
   display: flex;
@@ -333,8 +471,6 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
-  -webkit-clip-path: padding-box circle(50px at 0 100px);
-          clip-path: padding-box circle(50px at 0 100px);
   background: rgb(255, 240, 228);
   color: rgb(39, 38, 38);
   height: 35rem;
@@ -348,6 +484,11 @@ body {
   width: 50px;
   height: 54px;
   cursor: pointer;
+}
+.footer__icons_icon:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgb(174, 174, 239);
 }
 
 .logo {

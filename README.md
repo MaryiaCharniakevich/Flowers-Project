@@ -1,1 +1,1 @@
-# Frontend e-commerce 
+# Frontend e-commerce Flowers store
