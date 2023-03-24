@@ -17,7 +17,7 @@ body {
 
 .main {
     background: $secondary-color;
-    // padding: $p-2 0;
+    padding: $p-2 0 0;
     // margin: $m-4 0;
 }
 
@@ -118,3 +118,26 @@ body {
 }
 
   
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &__icon {
+      width: 50px;
+      height: 54px;
+
+      cursor: pointer;
+
+      &:hover {
+          cursor: pointer;
+  
+          border-radius: 5px;
+          transform: translateY(-5px);
+          box-shadow: 0 5px 10px $color-lightblue;
+      }
+  }
+}

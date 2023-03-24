@@ -69,6 +69,7 @@ body {
 
 .main {
   background: rgb(255, 248, 245);
+  padding: 2rem 0 0;
 }
 
 .container {
@@ -147,6 +148,23 @@ body {
   padding: 2rem;
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons__icon {
+  width: 50px;
+  height: 54px;
+  cursor: pointer;
+}
+.icons__icon:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgb(174, 174, 239);
+}
+
 .btns {
   transition: all 0.3s;
   display: inline-block;
@@ -161,11 +179,11 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: rgb(39, 38, 38);
-  background: rgb(215, 83, 122);
+  background: linear-gradient(violet, pink);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 .btns:hover {
-  background: rgb(253, 79, 121);
+  background: violet;
   box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
   transform: translateY(-3px);
 }
@@ -352,6 +370,12 @@ body {
   padding-left: 1rem;
 }
 
+.menu-icon {
+  display: none;
+  width: 25px;
+  cursor: pointer;
+}
+
 .logo {
   display: inline-flex;
   padding: 2rem;
@@ -374,20 +398,29 @@ body {
 
 .popup {
   position: fixed;
-  width: 6rem;
+  width: 8rem;
   height: 6rem;
   bottom: 2rem;
   right: 1rem;
   display: inline-block;
-  background-color: rgb(74, 233, 80);
-  border-radius: 50px;
+  background: linear-gradient(violet, pink);
+  border-radius: 30px;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 .popup__call {
   text-decoration-color: rgb(253, 152, 79);
   align-items: center;
+  justify-content: center;
   color: rgb(253, 152, 79);
+}
+.popup:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgb(174, 174, 239);
+  background: violet;
 }
 
 .line {
@@ -475,20 +508,6 @@ body {
   color: rgb(39, 38, 38);
   height: 35rem;
   z-index: 10;
-}
-.footer__icons {
-  display: flex;
-  justify-content: center;
-}
-.footer__icons_icon {
-  width: 50px;
-  height: 54px;
-  cursor: pointer;
-}
-.footer__icons_icon:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgb(174, 174, 239);
 }
 
 .logo {

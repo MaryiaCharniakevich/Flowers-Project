@@ -16,11 +16,11 @@
     font-weight: $font-w-500;
     
     color: $color-text;
-    background: $color-purple;
+    background: linear-gradient(violet, pink);
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
   
     &:hover {
-      background: $color-pink;
+      background: $color-violet;
       box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
   
       transform: translateY(-3px);
