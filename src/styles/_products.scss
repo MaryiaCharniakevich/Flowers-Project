@@ -1,5 +1,7 @@
+//swiper
 .product {
     @include flex();
+    float: right;
 
   
     &__item {
@@ -12,7 +14,7 @@
       padding: $p-2;
     
       text-align: center;
-      background-color: $color-pink;
+      background-color: $color-white;
       border-radius: 1rem;
     
       cursor: pointer;
@@ -23,24 +25,77 @@
     }
   
     &__image {
-      padding: $p-2;
-      width: 150px;
+      // padding: $p-1;
+      width: 230px;
       height: 300px;
     }
   
     &__title {
-      padding: $p-1;
+      padding: $p-2;
   
-      font-size: $font-20;
+      font-size: $font-24;
       font-weight: $font-w-500;
   
-      color: $color-white;
+      color: $color-text;
     }
   
     &__description {
-      padding: $p-1;
+      padding-bottom: $p-1;
+      text-align: left;
+      
   
-      color: $color-purple;
+      font-size: $font-16;
+      color: $color-text;
+      line-height: 1.5;
+    }
+  }
+
+
+  //card
+  .card {
+    display: inline-flex;
+
+  
+    &__item {  
+      position: relative;
+    
+      width: calc(100% / 4);
+      margin: $m-1;
+      padding: $p-2;
+    
+      text-align: center;
+      background-color: $color-white;
+      border-radius: 1rem;
+    
+      cursor: pointer;
+  
+      // &:hover {
+      //   transform: translateY(-3px);
+      // }
+    }
+  
+    &__image {
+      // padding: $p-1;
+      width: 230px;
+      height: 300px;
+    }
+  
+    &__title {
+      padding: $p-2;
+  
+      font-size: $font-24;
+      font-weight: $font-w-500;
+  
+      color: $color-text;
+    }
+  
+    &__description {
+      padding-bottom: $p-1;
+      text-align: left;
+      
+  
+      font-size: $font-16;
+      color: $color-text;
       line-height: 1.5;
     }
   }

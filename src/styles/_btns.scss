@@ -25,4 +25,64 @@
   
       transform: translateY(-3px);
     }
+
+    &__card {
+      width: 160px;
+      padding: 12px 10px;     
+
+      font-size: $font-16;
+      font-weight: $font-w-500;
+
+      line-height: 75px;
+      text-decoration: none;
+      border-radius: 5px;
+
+      color: $color-text;
+      background: linear-gradient(violet, pink);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  
+    &:hover {
+      background: $color-violet;
+      box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+  
+      transform: translateX(5px);
+    }
+    }
 }  
+
+
+
+
+.button {
+  width: 140px;
+  padding: 12px 10px;
+
+  outline: none;
+  border: 0;
+  color: $color-text;
+
+  cursor: pointer;
+  border-radius: 6px;
+  background: linear-gradient(violet, pink);
+
+  transition: width .5s;
+
+  &:hover {
+    width: 160px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-violet;
+  }
+
+  &__img {
+    display: none;
+    width: 30px;
+
+    &:hover {
+      display: inline;
+    }
+  }
+}
+
